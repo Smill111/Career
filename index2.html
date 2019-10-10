@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="">
+
+  <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <!-- Add your google fonts script here -->
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;
+background-color:   #F0F0F0;}
+.mySlides {display: none;}
+
+
+img {vertical-align: middle;}
+
+
+        header img {
+    height: 80px;
+    margin-left: 40px;
+}
+
+main {
+    color: white;
+}
+
+header {
+    background-color: #0d498f;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black; }
+
+
+
+header * {
+    display: inline;
+    font-family: 'Spectral', serif;
+}
+
+header li {
+    margin: 20px;
+    font-family: 'Spectral', serif;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Spectral', serif;
+}
+
+.flag {
+    height: 350px;
+    width: 550px;
+}
+
+.flex-row-items-center {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.history{
+  font-family: 'Karla', sans-serif;
+  font-size:20px;
+}
+.historytitle{
+  font-family: 'Spectral', serif;
+  font-size:40px;
+}
+.right{
+  font-size:40px;
+}
+.home{
+  font-size:20px;
+}
+.testimonial{
+  font-size:20px;
+}
+.bloopers{
+  font-size:20px;
+}
+.video{
+  font-size:20px;
+}
+.picture {
+  height: 350px;
+  width: 575px;
+}
+
+.centering {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+          <p class="right"> Future Plans</p>
+            <nav class="navbar-right">
+                <ul>
+                    <li><a href="index1.html" class="home">Home</a></li>
+                    <li><a href="college.html" class="testimonial">College</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+<div class="container">
+  <div class="row flex-row-items-center">
+    <div class="col-sm-6">
+      <h2 class="historytitle">
+        Graphic Design
+      </h2>
+      <h4 class="history">
+          I plan on going to University of Memphis. They have an excellant graphic design course and the tuition isn't that high if i can get a good scholarship. My second choice is UT Martin. They're well known for all of their technical courses, and a lot of my friends are going there. UOM - 3720 Alumni Ave, Memphis, TN 38152. UTM - 554 University St, Martin, TN 38237.
+      </h4>
+    </div>
+    <div class="col-sm-6">
+      <img src="img/img2.png" class="flag">
+    </div>
+  </div>
+  <div class="row flex-row-items-center">
+    <div class="col-sm-6">
+      <img src="img/img1.png" class="picture">
+    </div>
+    <div class="col-sm-6">
+      <h2 class="historytitle"> Extra </h2>
+      <h4 class="history centering"> Some companies like Archer Malmo, FBSciences, and Indigo hire Graphic Designers. You can get up to $50,000 a year. After 4 years of college and being broke for half of your life you'll pay that tuition off! What Graphic Designers Do. Graphic designers create visual concepts, using computer software or by hand, to communicate ideas that inspire, inform, and captivate consumers. They develop the overall layout and production design for applications such as advertisements, brochures, magazines, and reports.
+</h4>
+
+    </div>
+  </div>
+  <div class="row flex-row-items-center">
+    <div  class="col-sm-12">
+      
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
